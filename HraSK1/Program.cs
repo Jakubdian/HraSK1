@@ -16,19 +16,26 @@ namespace HraSK1
             Bytost dog = new Bytost();
 
             Warrior Patricia = new Warrior();
+            Warrior Chuchy = new Warrior();
+
+            Rozhovory rozhovor = new Rozhovory();
 
             //Přiřazování vlastvností objektům
             tree.vigor = 80;
             Groot.age = 180;
             Groot.name = "Groot";
             Patricia.name = "Patrícia";
+            Chuchy.name = "Chuchy";
 
             dog.ZapisSound("Bark");
 
-            tree.Greeting();
-            Groot.Greeting(true);
-            dog.Greeting(true);
-            Patricia.Greeting();
+            //tree.Greeting();
+            //Groot.Greeting(true);
+            //dog.Greeting(true);
+            //Patricia.Greeting();
+
+            rozhovor.Dialog(Chuchy, Patricia);
+            rozhovor.Dialog(Groot, tree);
 
             Console.ReadKey();
         }
