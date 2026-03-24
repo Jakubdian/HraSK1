@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HraSK1", "HraSK1\HraSK1.csproj", "{7C49493B-AFB6-4E43-84AA-29C6FE7F1AAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C49493B-AFB6-4E43-84AA-29C6FE7F1AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C49493B-AFB6-4E43-84AA-29C6FE7F1AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C49493B-AFB6-4E43-84AA-29C6FE7F1AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C49493B-AFB6-4E43-84AA-29C6FE7F1AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F0FAD28-BCE0-4D66-A59B-4C154B12A2B5}
+	EndGlobalSection
+EndGlobal
