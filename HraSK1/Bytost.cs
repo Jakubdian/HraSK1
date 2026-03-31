@@ -18,6 +18,7 @@ namespace HraSK1
         public int strength; //0 - 100
         public int dexterity = 10; //0 - 100
         public int defense = 10; //0 - 100
+        public int mood = 50; //0 - 100
 
         public bool weapon = false;
 

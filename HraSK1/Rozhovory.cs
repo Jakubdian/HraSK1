@@ -15,8 +15,8 @@ namespace HraSK1
 
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(warrior1.name + "." + warrior1.Questions[i]);
-                Console.WriteLine(warrior2.name + "." + warrior2.Answers[i]);
+                Console.WriteLine(warrior1.name + ": " + warrior1.Questions[i]);
+                Console.WriteLine(warrior2.name + ": " + warrior2.Answers[i] + "\n");
             }
         }
         public void Dialog(Bytost bytost1, Bytost bytost2)
@@ -26,8 +26,19 @@ namespace HraSK1
 
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(bytost1.name + "." + bytost1.Questions[i]);
-                Console.WriteLine(bytost2.name + "." + bytost2.Answers[i]);
+                Console.WriteLine(bytost1.name + ": " + bytost1.Questions[i]);
+                Console.WriteLine(bytost2.name + ": " + bytost2.Answers[i] + "\n");
+            }
+        }
+        public void Dialog(Mage mage1, Mage mage2)
+        {
+            mage1.Greeting();
+            mage2.Greeting();
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(mage1.name + ": " + mage1.Questions[i]);
+                Console.WriteLine(mage2.name + ": " + mage2.Answers[i] + "\n");
             }
         }
     }

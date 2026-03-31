@@ -18,6 +18,9 @@ namespace HraSK1
             Warrior Patricia = new Warrior();
             Warrior Chuchy = new Warrior();
 
+            Mage Gandalf = new Mage();
+            Mage Brumbal = new Mage();
+
             Rozhovory rozhovor = new Rozhovory();
 
             //Přiřazování vlastvností objektům
@@ -26,6 +29,8 @@ namespace HraSK1
             Groot.name = "Groot";
             Patricia.name = "Patrícia";
             Chuchy.name = "Chuchy";
+            Gandalf.name = "Gandalf";
+            Brumbal.name = "Brumbal";
 
             dog.ZapisSound("Bark");
 
@@ -36,6 +41,7 @@ namespace HraSK1
 
             rozhovor.Dialog(Chuchy, Patricia);
             rozhovor.Dialog(Groot, tree);
+            rozhovor.Dialog(Gandalf, Brumbal);
 
             Console.ReadKey();
         }
