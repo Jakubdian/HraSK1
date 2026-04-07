@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Battle.cs" />
     <Compile Include="Bytost.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Mage.cs" />

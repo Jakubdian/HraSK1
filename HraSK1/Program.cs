@@ -23,6 +23,8 @@ namespace HraSK1
 
             Rozhovory rozhovor = new Rozhovory();
 
+            Battle battle = new Battle();
+
             //Přiřazování vlastvností objektům
             tree.vigor = 80;
             Groot.age = 180;
@@ -42,6 +44,8 @@ namespace HraSK1
             rozhovor.Dialog(Chuchy, Patricia);
             rozhovor.Dialog(Groot, tree);
             rozhovor.Dialog(Gandalf, Brumbal);
+
+            battle.Utok(Chuchy, Patricia);
 
             Console.ReadKey();
         }

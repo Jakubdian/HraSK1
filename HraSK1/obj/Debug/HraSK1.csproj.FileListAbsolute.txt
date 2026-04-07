@@ -1,0 +1,8 @@
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\obj\Debug\HraSK1.csproj.AssemblyReference.cache
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\obj\Debug\HraSK1.csproj.SuggestedBindingRedirects.cache
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\obj\Debug\HraSK1.csproj.CoreCompileInputs.cache
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\bin\Debug\HraSK1.exe.config
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\bin\Debug\HraSK1.exe
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\bin\Debug\HraSK1.pdb
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\obj\Debug\HraSK1.exe
+C:\Users\jakub.dian\Source\Repos\Jakubdian\HraSK1\HraSK1\obj\Debug\HraSK1.pdb

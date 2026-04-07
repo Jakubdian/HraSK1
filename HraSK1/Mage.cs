@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HraSK1
 {
-    internal class Mage:Bytost
+    internal class Mage : Bytost
     {
         public bool staff = true;
         public bool spellbook = true;

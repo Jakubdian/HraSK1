@@ -13,11 +13,19 @@ namespace HraSK1
             warrior1.Greeting();
             warrior2.Greeting();
 
-            for (int i = 0; i < 10; i++)
+            do
             {
+                int i = 0;
+                i++;
                 Console.WriteLine(warrior1.name + ": " + warrior1.Questions[i]);
-                Console.WriteLine(warrior2.name + ": " + warrior2.Answers[i] + "\n");
-            }
+                Console.WriteLine("Mood: " + warrior1.mood + "\n");
+                Console.WriteLine(warrior2.name + ": " + warrior2.Answers[i]);
+                Console.WriteLine("Mood: " + warrior2.mood + "\n");
+
+                warrior1.mood -= 5;
+                warrior2.mood -= 5;
+
+            } while (warrior1.mood >= 5);
         }
         public void Dialog(Bytost bytost1, Bytost bytost2)
         {
@@ -35,11 +43,20 @@ namespace HraSK1
             mage1.Greeting();
             mage2.Greeting();
 
-            for (int i = 0; i < 10; i++)
+            do
             {
+                int i = 0;
+                i++;
                 Console.WriteLine(mage1.name + ": " + mage1.Questions[i]);
-                Console.WriteLine(mage2.name + ": " + mage2.Answers[i] + "\n");
-            }
+                Console.WriteLine("Mood: " + mage1.mood + "\n");
+                Console.WriteLine(mage2.name + ": " + mage2.Answers[i]);
+                Console.WriteLine("Mood: " + mage2.mood + "\n");
+
+                mage1.mood -= 3;
+                mage2.mood -= 3;
+
+            } while (mage1.mood >= 5);
+
         }
     }
 }
