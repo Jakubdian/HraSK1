@@ -32,7 +32,7 @@ namespace HraSK1
             Patricia.name = "Patrícia";
             Chuchy.name = "Chuchy";
             Gandalf.name = "Gandalf";
-            Brumbal.name = "Brumbal";
+            Brumbal.name = "Brumbal"    
 
             dog.ZapisSound("Bark");
 
@@ -42,10 +42,15 @@ namespace HraSK1
             //Patricia.Greeting();
 
             rozhovor.Dialog(Chuchy, Patricia);
-            rozhovor.Dialog(Groot, tree);
-            rozhovor.Dialog(Gandalf, Brumbal);
-
             battle.Utok(Chuchy, Patricia);
+            Console.WriteLine("\n");
+
+            rozhovor.Dialog(Groot, tree);
+
+            Console.WriteLine("\n");
+
+            rozhovor.Dialog(Gandalf, Brumbal);
+            battle.Utok(Brumbal, Gandalf);
 
             Console.ReadKey();
         }
