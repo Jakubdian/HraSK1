@@ -14,7 +14,7 @@ namespace HraSK1
         public string name = "bytost";
         public int age;
 
-        public int vigor = 100; //0 - 100
+        public int health = 100; //0 - 100
         public int strength; //0 - 100
         public int dexterity = 10; //0 - 100
         public int defense = 10; //0 - 100

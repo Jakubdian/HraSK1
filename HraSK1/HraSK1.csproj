@@ -47,6 +47,7 @@
     <Compile Include="Bytost.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Mage.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Prace_ze_souborem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
