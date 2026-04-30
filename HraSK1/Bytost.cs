@@ -8,44 +8,14 @@ namespace HraSK1
 {
     internal class Bytost
     {
-        public string[] Questions = new string[20];
-        public string[] Answers = new string[20];
-
-        public string name = "bytost";
-        public int age;
-
+        public string name;
         public int health = 100; //0 - 100
-        public int strength; //0 - 100
-        public int dexterity = 10; //0 - 100
-        public int defense = 10; //0 - 100
-        public int mood = 50; //0 - 100
-
-        public bool weapon = false;
-
-        public Inventory[] weapons = new Inventory[3];
-
-        private string sound = "groot";
+        public int intelligence = 10;
+        public int mood = 50;
 
         virtual public void Greeting()
         {
-            Console.WriteLine("{0}: ...", name);
-        }
-
-        public void Greeting(bool sound)
-        {
-            Console.WriteLine("{0}: {1}", name, this.sound);
-        }
-
-        public void ZapisSound(string sound)
-        {
-            this.sound = sound;
-        }
-
-        public Bytost() //Konstruktor
-        {
-            Prace_ze_souborem Soubor = new Prace_ze_souborem();
-            Questions = Soubor.Cteni_ze_souboru("Questions_Bytost.txt");
-            Answers = Soubor.Cteni_ze_souboru("Answers_Bytost.txt");
+            Console.WriteLine($"{name}: Zdravím tě...");
         }
     }
 }

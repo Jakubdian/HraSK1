@@ -8,31 +8,21 @@ namespace HraSK1
 {
     internal class Player : Bytost
     {
-        public string playerClass = "Mage";
-        public int mana = 25;
-        public int intelligence = 20;
+        public string kolej;
+        public int mana = 50;
+        public int maxmana = 50;
+        public List<Kouzlo> mojeKouzla = new List<Kouzlo>();
 
-        public Player(string chosenname)
+        public Player(string jmeno)
         {
-            name = chosenname;
+            name = jmeno;
+            // Základní kouzlo do začátku
+            mojeKouzla.Add(new Kouzlo("Mdloby na tebe", 10, 5));
         }
 
-        public Home(string chosenhome)
+        public void StatList()
         {
-            home = chosenhome
-        }
-
-        public void ShowStats()
-        {
-            Console.WriteLine("=== YOUR STATS ===");
-            Console.WriteLine("Name:         " + name);
-            Console.WriteLine("Class:        " + playerClass);
-            Console.WriteLine("Vigor:        " + health);
-            Console.WriteLine("Strength:     " + strength);
-            Console.WriteLine("Intelligence: " + intelligence);
-            Console.WriteLine("Mana:         " + mana);
-            Console.WriteLine("Defense:      " + defense);
-            Console.WriteLine("==================");
+            Console.WriteLine($"\n[ {name} | Kolej: {kolej} | HP: {health} | Mana: {mana} ]");
         }
     }
 }
