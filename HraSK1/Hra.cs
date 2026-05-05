@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HraSK1
 {
-    internal class Hra
+    internal class Hra:Program
     {
         public void Start()
         {
@@ -16,8 +16,20 @@ namespace HraSK1
             Console.Write("Zadej své jméno: ");
             Player p = new Player(Console.ReadLine());
 
-            Console.WriteLine("Moudrý klobouk přemýšlí...");
-            Console.WriteLine("Vyber si: 1 - Nebelvír, 2 - Zmijozel, 3 - Mrzimor, 4 - Havraspár");
+            Console.WriteLine("Profesorka McGonnagalová: Vítejte budoucí studenti bradavic, já jsem ředitelka Nebelvírské koleje profesorka McGonnagalová.");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nProfesorka McGonnagalová: Přesuneme do hlavní síně kde se rozdělíte do kolejí ve kterých budete následujících 7 let bydlet.");
+            Console.WriteLine("\nZmáčkni klávesu pro pokračování");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine($"Profesorka McGonnagalová: Další nařadě je {p.name}");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nProfesorka ti nasadí na Hlavu moudrý klobouk.");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nMoudrý klobouk přemýšlí...");
+            Thread.Sleep(1000);
+            Console.WriteLine("\nVyber si: 1 - Nebelvír, 2 - Zmijozel, 3 - Mrzimor, 4 - Havraspár");
 
             string volba = Console.ReadLine();
 
@@ -36,7 +48,7 @@ namespace HraSK1
                     p.kolej = "Havraspár";
                     break;
                 default:
-                    p.kolej = "Moták (Squib)"; // Tohle se stane, když napíše nesmysl
+                    p.kolej = "Moták";
                     break;
             }
 
@@ -57,7 +69,7 @@ namespace HraSK1
             Console.WriteLine("\nNáhle vtrhl do síně lord Voldemort!");
             Bytost boss = new Bytost();
             boss.name = "Voldemort";
-            boss.health = 100;
+            boss.health = 200;
 
             Battle b = new Battle();
             b.Souboj(p, boss);
