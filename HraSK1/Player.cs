@@ -12,6 +12,7 @@ namespace HraSK1
         public int mana = 50;
         public int maxmana = 50;
         public List<Kouzlo> mojeKouzla = new List<Kouzlo>();
+        public int manaPotions = 2;
 
         public Player(string jmeno)
         {
@@ -22,7 +23,7 @@ namespace HraSK1
 
         public void StatList()
         {
-            Console.WriteLine($"\n[ {name} | Kolej: {kolej} | HP: {health} | Mana: {mana} ]");
+            Console.WriteLine($"\n[ {name} | Kolej: {kolej} | HP: {health} | Mana: {mana}/{maxmana} | Lektvary: {manaPotions} ]");
         }
     }
 }
