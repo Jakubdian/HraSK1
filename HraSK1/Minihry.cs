@@ -12,13 +12,31 @@ namespace HraSK1
     {
         public int TimingKulicka(int rychlost)
         {
+            while (Console.KeyAvailable) { Console.ReadKey(true); }
+
+            // Použijeme raději lokální souřadnici od 0 pro absolutní jistotu
             int pozice = 0;
             bool vpravo = true;
-            Console.WriteLine("Tref se doprostřed [  X  ] mezerníkem!");
+
+            // Před minihrou odskočíme na čisté místo nebo vymažeme předchozí řádek
+            Console.WriteLine("\nTref se doprostřed [  X  ] mezerníkem!");
+
+            // Zjistíme si aktuální řádek po vypsání hlášky
+            int startovniRadek = Console.CursorTop;
+
+            // Pojistka: Pokud jsme na úplném dně konzole, raději vyčistíme obrazovku, 
+            // aby se nám nezhroutily souřadnice bufferu
+            if (startovniRadek >= Console.BufferHeight - 2)
+            {
+                Console.Clear();
+                Console.WriteLine("Tref se doprostřed [  X  ] mezerníkem!");
+                startovniRadek = Console.CursorTop;
+            }
 
             while (!Console.KeyAvailable)
             {
-                Console.SetCursorPosition(0, Console.CursorTop);
+                // Vracíme se na bezpečně ověřený řádek
+                Console.SetCursorPosition(0, startovniRadek);
                 char[] radek = "----------[  X  ]----------".ToCharArray();
                 if (pozice < radek.Length) radek[pozice] = 'O';
 
