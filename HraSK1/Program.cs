@@ -10,8 +10,49 @@ namespace HraSK1
     {
         static void Main(string[] args)
         {
-            Hra mojeHra = new Hra();
-            mojeHra.Start();
+            //Vytváření objektů
+            Bytost tree = new Bytost();
+            Bytost Groot = new Bytost();
+            Bytost dog = new Bytost();
+
+            Warrior Patricia = new Warrior();
+            Warrior Chuchy = new Warrior();
+
+            Mage Gandalf = new Mage();
+            Mage Brumbal = new Mage();
+
+            Rozhovory rozhovor = new Rozhovory();
+
+            Battle battle = new Battle();
+
+            //Přiřazování vlastvností objektům
+            tree.vigor = 80;
+            Groot.age = 180;
+            Groot.name = "Groot";
+            Patricia.name = "Patrícia";
+            Chuchy.name = "Chuchy";
+            Gandalf.name = "Gandalf";
+            Brumbal.name = "Brumbal";
+
+            dog.ZapisSound("Bark");
+
+            //tree.Greeting();
+            //Groot.Greeting(true);
+            //dog.Greeting(true);
+            //Patricia.Greeting();
+
+            rozhovor.Dialog(Chuchy, Patricia);
+            battle.Utok(Chuchy, Patricia);
+            Console.WriteLine("\n");
+
+            rozhovor.Dialog(Groot, tree);
+
+            Console.WriteLine("\n");
+
+            rozhovor.Dialog(Gandalf, Brumbal);
+            battle.Utok(Brumbal, Gandalf);
+
+            Console.ReadKey();
         }
     }
 }
